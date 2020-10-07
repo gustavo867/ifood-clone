@@ -8,7 +8,7 @@ interface Background {
   color: string;
 }
 
-interface Theme {
+export interface Theme {
   theme: Background;
 }
 
@@ -81,7 +81,7 @@ export const Logo = styled.Image.attrs({
 export const AbsoluteContainer = styled.View`
   position: absolute;
   z-index: 1;
-  bottom: ${height * 0.35}px;
+  bottom: ${height * 0.45}px;
   width: ${width * 0.7}px;
   flex: 1;
   align-self: center;
@@ -91,7 +91,7 @@ export const Text = styled.Text`
   font-size: 24px;
   color: #fff;
   opacity: 0.6;
-  letter-spacing: 0.5;
+  letter-spacing: 0.5px;
   text-align: center;
 `;
 
@@ -100,7 +100,7 @@ export const SubText = styled.Text`
   opacity: 0.8;
   text-align: center;
   margin-top: 15px;
-  letter-spacing: 0.4;
+  letter-spacing: 0.4px;
 `;
 
 export const Button = styled.TouchableOpacity`

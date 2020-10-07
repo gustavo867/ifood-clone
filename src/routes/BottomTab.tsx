@@ -17,7 +17,7 @@ const BottomTab: React.FC = () => {
         style: {
           elevation: 0,
           shadowOpacity: 0,
-          height: 64,
+          height: 74,
           backgroundColor: "#121212",
         },
         tabStyle: {
@@ -27,12 +27,15 @@ const BottomTab: React.FC = () => {
         },
         iconStyle: {
           flex: 0,
-          width: 20,
-          height: 20,
+          width: 30,
+          height: 30,
+        },
+        labelStyle: {
+          fontSize: 13,
         },
         inactiveTintColor: "#CCC",
         activeTintColor: "#FFF",
-        showLabel: false,
+        showLabel: true,
       }}
     >
       <Tab.Screen
@@ -58,7 +61,9 @@ const BottomTab: React.FC = () => {
         component={Request}
         options={{
           tabBarIcon: ({ color, size }) => {
-            return <MaterialIcons name="home" size={size} color={color} />;
+            return (
+              <MaterialIcons name="bookmark-border" size={size} color={color} />
+            );
           },
         }}
       />
@@ -67,7 +72,9 @@ const BottomTab: React.FC = () => {
         component={Profile}
         options={{
           tabBarIcon: ({ color, size }) => {
-            return <MaterialIcons name="home" size={size} color={color} />;
+            return (
+              <MaterialIcons name="person-outline" size={size} color={color} />
+            );
           },
         }}
       />

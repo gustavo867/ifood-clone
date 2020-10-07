@@ -1,13 +1,30 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React, { useState } from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 
-// import { Container } from './styles';
+import * as S from "./styles";
+import Filters from "../../components/Filters";
 
 const Home: React.FC = () => {
+  const [city, setCity] = useState("Sua rua");
+  const [visible, setVisible] = useState(true);
+
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+    <S.Container>
+      {visible && (
+        <S.BetweenRow>
+          <S.SelectCityButton>
+            <S.SelectCity>{city}</S.SelectCity>
+            <Ionicons name="ios-arrow-down" size={18} color="red" />
+          </S.SelectCityButton>
+          <S.QrCodeButton>
+            <MaterialCommunityIcons name="qrcode-scan" size={24} color="red" />
+          </S.QrCodeButton>
+        </S.BetweenRow>
+      )}
+      <Filters visible={visible} />
       <Text>Hello</Text>
-    </View>
+    </S.Container>
   );
 };
 
