@@ -8,6 +8,10 @@ export const Container = styled.SafeAreaView`
   padding-top: 40px;
 `;
 
+export const Scroll = styled.ScrollView`
+  
+`;
+
 export const SelectCityButton = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;

@@ -1,10 +1,10 @@
 import styled from "styled-components/native";
 
 export const CategoryImageContainer = styled.View`
-  border-radius: 12px;
+  border-radius: 5px;
   margin: 10px;
-  width: 104px;
-  height: 81px;
+  width: 84px;
+  height: 61px;
 `;
 
 export const CategoriesList = styled.FlatList.attrs({

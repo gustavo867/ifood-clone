@@ -18,7 +18,7 @@ const BottomTab: React.FC = () => {
           elevation: 0,
           shadowOpacity: 0,
           height: 74,
-          backgroundColor: "#13131A",
+          backgroundColor: "#141414",
           opacity: 0.9,
         },
         tabStyle: {

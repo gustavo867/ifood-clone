@@ -1,7 +1,6 @@
 import React from "react";
 import { ImageSourcePropType } from "react-native";
 import CategoryItem from "./components/CategoryItem";
-
 import * as S from "./styles";
 
 import categories from "../../utils/categories";

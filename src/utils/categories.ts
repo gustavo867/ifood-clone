@@ -1,36 +1,53 @@
-import cart from "../assets/cart.jpg";
-import creditCard from "../assets/credit-card.png";
-
 const categories = [
   {
     id: 1,
-    image: cart,
     title: "Mercado",
-    color: "red",
+    color: "#67111C",
   },
   {
     id: 2,
-    image: cart,
     title: "Promoções",
     color: "#F5F749",
   },
   {
     id: 3,
-    image: creditCard,
     title: "Vale-refeição",
-    color: "red",
+    color: "#67111C",
   },
   {
     id: 4,
-    image: cart,
     title: "Brasileira",
-    color: "#157145",
+    color: "#5F7463",
   },
   {
     id: 5,
-    image: cart,
     title: "Lanches",
     color: "#33658A",
+  },
+  {
+    id: 6,
+    title: "Sorvetes",
+    color: "#5A5269",
+  },
+  {
+    id: 7,
+    title: "Pastel",
+    color: "#33658A",
+  },
+  {
+    id: 8,
+    title: "Padarias",
+    color: "#5F7463",
+  },
+  {
+    id: 9,
+    title: "Pizza",
+    color: "#635671",
+  },
+  {
+    id: 10,
+    title: "Cafeterias",
+    color: "#635671",
   },
 ];
 

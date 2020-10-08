@@ -12,10 +12,12 @@ export const FiltersScroll = styled.ScrollView.attrs({
   margin-top: ${(props: Props) => (props.visible ? 20 : 0)}px;
 `;
 
-export const FilterButton = styled.TouchableOpacity`
+export const FilterButton = styled.TouchableOpacity.attrs({
+  delayPressIn: 1,
+})`
   width: 120px;
   height: 40px;
-  border-radius: 30px;
+  border-radius: 8px;
   border-color: #ccc;
   border-width: 0.6px;
   margin: 15px;

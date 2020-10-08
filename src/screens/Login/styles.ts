@@ -1,5 +1,6 @@
-import { Dimensions, useWindowDimensions } from "react-native";
+import { Dimensions } from "react-native";
 import { RectButton } from "react-native-gesture-handler";
+
 import styled from "styled-components/native";
 
 const { width, height } = Dimensions.get("window");

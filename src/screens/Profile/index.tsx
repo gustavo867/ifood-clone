@@ -1,10 +1,8 @@
 import React from "react";
-import { View } from "react-native";
-
-// import { Container } from './styles';
+import * as S from "./styles";
 
 const Request: React.FC = () => {
-  return <View />;
+  return <S.Container />;
 };
 
 export default Request;

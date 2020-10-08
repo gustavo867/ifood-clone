@@ -1,5 +1,4 @@
 import React from "react";
-
 import * as S from "./styles";
 import { Ionicons } from "@expo/vector-icons";
 
