@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 
 import * as S from "./styles";
 import Filters from "../../components/Filters";
+import Categories from "../../components/Categories";
 
 const Home: React.FC = () => {
   const [city, setCity] = useState("Sua rua");
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
         </S.BetweenRow>
       )}
       <Filters visible={visible} />
-      <Text>Hello</Text>
+      <Categories />
     </S.Container>
   );
 };

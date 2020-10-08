@@ -18,7 +18,8 @@ const BottomTab: React.FC = () => {
           elevation: 0,
           shadowOpacity: 0,
           height: 74,
-          backgroundColor: "#121212",
+          backgroundColor: "#13131A",
+          opacity: 0.9,
         },
         tabStyle: {
           flexDirection: "column",
