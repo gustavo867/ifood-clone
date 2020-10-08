@@ -6,6 +6,7 @@ interface Props {
 
 export const FiltersScroll = styled.ScrollView.attrs({
   horizontal: true,
+  showsHorizontalScrollIndicator: false,
 })`
   flex-grow: 0;
   margin-top: ${(props: Props) => (props.visible ? 20 : 0)}px;

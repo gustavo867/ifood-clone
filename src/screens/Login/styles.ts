@@ -1,6 +1,7 @@
-import { Dimensions } from "react-native";
+import { Dimensions, useWindowDimensions } from "react-native";
 import { RectButton } from "react-native-gesture-handler";
 import styled from "styled-components/native";
+
 const { width, height } = Dimensions.get("window");
 
 interface Background {
@@ -81,7 +82,7 @@ export const Logo = styled.Image.attrs({
 export const AbsoluteContainer = styled.View`
   position: absolute;
   z-index: 1;
-  bottom: ${height * 0.45}px;
+  top: ${height * 0.5}px;
   width: ${width * 0.7}px;
   flex: 1;
   align-self: center;
