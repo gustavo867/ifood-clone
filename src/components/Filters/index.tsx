@@ -3,13 +3,13 @@ import * as S from "./styles";
 import { Ionicons } from "@expo/vector-icons";
 
 interface Props {
-  visible: boolean;
+  value: number;
 }
 
-const Filters: React.FC<Props> = ({ visible }: Props) => {
+const Filters: React.FC<Props> = ({ value }: Props) => {
   return (
     <S.FiltersScroll
-      visible={visible}
+      value={value}
       contentContainerStyle={{
         alignItems: "center",
         justifyContent: "center",
@@ -20,15 +20,15 @@ const Filters: React.FC<Props> = ({ visible }: Props) => {
         <Ionicons
           style={{ marginLeft: 5 }}
           name="ios-menu"
-          size={24}
+          size={15}
           color="#FFF"
         />
       </S.FilterButton>
       <S.FilterButton>
         <Ionicons
-          style={{ marginRight: 5 }}
+          style={{ marginLeft: 5 }}
           name="ios-walk"
-          size={20}
+          size={15}
           color="#FFF"
         />
         <S.FilterText>Para entrega</S.FilterText>
@@ -36,36 +36,36 @@ const Filters: React.FC<Props> = ({ visible }: Props) => {
       <S.FilterButton>
         <S.FilterText>Tipo de loja</S.FilterText>
         <Ionicons
-          style={{ marginLeft: 5 }}
+          style={{ marginRight: 5 }}
           name="ios-arrow-down"
-          size={20}
+          size={15}
           color="#FFF"
         />
       </S.FilterButton>
       <S.FilterButton>
         <S.FilterText>Ordernar</S.FilterText>
         <Ionicons
-          style={{ marginLeft: 5 }}
+          style={{ marginRight: 5 }}
           name="ios-arrow-down"
-          size={20}
+          size={15}
           color="#FFF"
         />
       </S.FilterButton>
       <S.FilterButton>
         <S.FilterText>Entrega grátis</S.FilterText>
         <Ionicons
-          style={{ marginLeft: 5 }}
+          style={{ marginRight: 5 }}
           name="ios-arrow-down"
-          size={20}
+          size={15}
           color="#FFF"
         />
       </S.FilterButton>
       <S.FilterButton>
         <S.FilterText>Vale refeição</S.FilterText>
         <Ionicons
-          style={{ marginLeft: 5 }}
+          style={{ marginRight: 5 }}
           name="ios-arrow-down"
-          size={20}
+          size={15}
           color="#FFF"
         />
       </S.FilterButton>
