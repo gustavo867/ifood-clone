@@ -5,3 +5,7 @@ export const Container = styled.View`
   background-color: ${(props: Theme) => props.theme.background};
   flex: 1;
 `;
+
+export const List = styled.FlatList`
+  flex-grow: 1;
+`;
